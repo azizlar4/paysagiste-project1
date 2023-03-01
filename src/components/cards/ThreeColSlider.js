@@ -92,7 +92,7 @@ export default function Cardd ()  {
   const cards = [
     {
       imageSrc: "https://floriansilnicki.fr/wp-content/uploads/2019/04/influence-1.jpg",
-      title: "Se faire connaître",
+      title: "Conception",
       description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
       locationText: "Rome, Italy",
       pricingText: "USD 39/Day",
@@ -100,16 +100,16 @@ export default function Cardd ()  {
     },
     {
       imageSrc: "https://audreytips.com/wp-content/uploads/2019/05/comment-faire-connaitre-votre-entreprise-sur-internet-8.jpg",
-      title: "développer  une  image  afin  d’assurer  la  visibilité  et  la notoriété,",
-      description: "Lorem ipsum dolor sit amet, ct ut laborliqua.",
+      title: "Aménagement",
+      description: "Lorem ipsum dolor sitzae amet, ct ut laborliLorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.qua.",
       locationText: "Ibiza, Spain",
       pricingText: "USD 50/Day",
       rating: 4.9,
     },
     {
       imageSrc: "https://www.dynamique-mag.com/wp-content/uploads/aacde813f491ade6b096ba686dd0f4d8.jpg",
-      title: "réaliser l’ensemble des outils nécessaires aux actions de communication  ",
-      description: "(identité  graphique,  site  internet, campagne publicitaire, document de présentation)",
+      title: "Entretien  ",
+      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
       locationText: "Palo Alto, CA",
       pricingText: "USD 19/Day",
       rating: "5.0",
@@ -118,10 +118,10 @@ export default function Cardd ()  {
   ]
 
   return (
-    <Container>
+    <Container id="Communication">
       <Content>
         <HeadingWithControl>
-          <Heading>COME4COM aide ses clients à :</Heading>
+          <Heading>Nos Services :</Heading>
           <Controls>
             <PrevButton onClick={sliderRef?.slickPrev}><ChevronLeftIcon/></PrevButton>
             <NextButton onClick={sliderRef?.slickNext}><ChevronRightIcon/></NextButton>

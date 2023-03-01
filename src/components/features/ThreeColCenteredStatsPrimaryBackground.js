@@ -4,6 +4,11 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { Container as ContainerBase, ContentWithPaddingXl } from "components/misc/Layouts";
 import { SectionDescription } from "components/misc/Typography";
+import team from "../../img/team.png"
+
+
+
+
 
 const Container = tw(ContainerBase)`my-8 lg:my-10 bg-primary-500 text-gray-100 -mx-8 px-8`;
 const HeadingContainer = tw.div``;
@@ -22,16 +27,16 @@ export default ({
   description = "Chez COME4COM, vous trouverez des jeunes, des moins  jeunes,  des  développeurs,  graphistes, webdesigners,  concepteurs  rédacteurs,  motion designers et même des stagiaires.",
   stats = [
     {
-      key: "Clients",
-      value: "250+",
+      key: "",
+      value: "",
     },
     {
-      key: "Revenue",
-      value: "$10M+",
+      key: "",
+      value: "",
     },
     {
-      key: "Employees",
-      value: "50+",
+      key: "",
+      value: "",
     },
   ]
 }) => {
@@ -51,7 +56,11 @@ export default ({
             </Stat>
           ))}
         </StatsContainer>
+        <div style={{display:'flex', justifyContent:'center'}}>
+      <img src={team} />
+      </div>
       </ContentWithPaddingXl>
+     
     </Container>
   );
 };

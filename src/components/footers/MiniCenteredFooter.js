@@ -31,7 +31,7 @@ const SocialLink = styled.a`
 const CopyrightText = tw.p`text-center mt-10 font-medium tracking-wide text-sm text-gray-500`
 export default () => {
   return (
-    <Container>
+    <Container id="contact">
       <Content>
         <Row>
           <LogoContainer>

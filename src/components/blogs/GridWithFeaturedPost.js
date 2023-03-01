@@ -6,6 +6,7 @@ import { css } from "styled-components/macro";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings";
 import { SectionDescription } from "components/misc/Typography";
 import { ReactComponent as SvgDotPatternIcon } from "images/dot-pattern.svg";
+import LogoImage from "../../images/logo.png";
 
 const HeadingContainer = tw.div`text-center `;
 const Subheading = tw(SubheadingBase)`mb-4 `;
@@ -66,43 +67,43 @@ export default ({
   posts = [
     {
       postImageSrc:
-        "https://images.unsplash.com/photo-1563784462041-5f97ac9523dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
+        "https://images.unsplash.com/photo-1584987274840-919ff11490ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       authorImageSrc:
-        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      title: "Enjoying the beach life while on a vacation",
+        "https://i.imgur.com/3Llg3Tx.png",
+      title: "Les avantages des jardins verticaux et comment les créer chez vous",
       description:
         "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
-      authorName: "Adam Cuppy",
-      authorProfile: "Vlogger",
+      authorName: "Paysagiste",
+      authorProfile: "Paysagiste",
       url: "https://reddit.com",
       featured: true
     },
     {
       postImageSrc:
-        "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      title: "Getting the most out of your vacation",
-      authorName: "Aaron Patterson",
+        "https://plus.unsplash.com/premium_photo-1673141390222-2bd01b623bf3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1936&q=80",
+      title: "Les plantes d'ombre pour un jardin frais et agréable en été",
+      authorName: "Paysagiste",
       url: "https://reddit.com"
     },
     {
       postImageSrc:
-        "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      title: "Choosing the perfect Safaris in Africa",
-      authorName: "Sam Phipphen",
+        "https://images.unsplash.com/photo-1506868544459-9bb3a18fbc94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+      title: "Les principes essentiels d’un jardin bio",
+      authorName: "Paysagiste",
       url: "https://reddit.com"
     },
     {
       postImageSrc:
-        "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      title: "Hiking during the monsoon in Asia",
-      authorName: "Tony Hawk",
+        "https://e-paysages.fr/wp-content/uploads/2022/11/plan-plantations.jpg",
+      title: "Logiciel jardin 3D gratuit en ligne : et si la solution était e-paysages ?",
+      authorName: "Paysagiste",
       url: "https://timerse.com"
     },
     {
       postImageSrc:
-        "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      title: "Must carry items while travelling to Thailand",
-      authorName: "Himali Turn",
+        "https://e-paysages.fr/wp-content/uploads/2022/12/plan_1-Photo.jpg",
+      title: "IDEE AMENAGEMENT JARDIN : 15 IDÉES INGÉNIEUSES, DÉCORATIVES ET FACILES À RÉALISER",
+      authorName: "Paysagiste",
       url: "https://timerse.com"
     }
   ]

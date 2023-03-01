@@ -1,26 +1,18 @@
 import Cardd from "components/cards/ThreeColSlider";
-import Headerr from "components/headers/light";
-import AboutUs from "pages/AboutUs";
-import Hero from "components/hero/FullWidthWithImage.js";
+import Card from "components/cards/TwoTrendingPreviewCardsWithImage";
+
+import Hero from "components/hero/BackgroundAsImage.js";
 // import Features from "components/features/ThreeColWithSideImageWithPrimaryBackground.js";
 import Features from "components/features/VerticalWithAlternateImageAndText.js";
-import Footer from "components/footers/MiniCenteredFooter.js";
-import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
+import Services from "components/features/ThreeColSimple";
+import NewsLetter from "components/forms/SimpleSubscribeNewsletter";
+import Footer from "components/footers/SimpleFiveColumn.js";
+
 import Blog from "components/blogs/GridWithFeaturedPost.js";
-import tw from "twin.macro";
+import Blogg from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
 
-import Featuress from "components/features/ThreeColCenteredStatsPrimaryBackground";
-import Featuresss from "components/features/TwoColSingleFeatureWithStats2";
-
-import Testimonial from "components/testimonials/SimplePrimaryBackground.js";
-import TabGrid from "components/cards/TabCardGrid.js";
+import Testimonial from "components/testimonials/TwoColumnWithImage.js";
 import FAQ from "components/faqs/SimpleWithSideImage.js";
-import Featuressss from "components/features/ThreeColWithSideImageWithPrimaryBackground";
-
-
-
-const HighlightedText = tw.span`text-primary-500`
-
 
 export default function Explore() {
   return (
@@ -28,7 +20,13 @@ export default function Explore() {
 
 {/* <Headerr /> */}
 <Hero />
+
+<Services/>
+
 <Features />
+<Blog />
+<NewsLetter/>
+
 {/* <Cardd /> */}
 {/* <Portfolio />
 
@@ -37,14 +35,27 @@ export default function Explore() {
         heading={<>We love <HighlightedText>Writing</HighlightedText></>}
       /> */}
      
-<Featuressss />
-<Featuresss />
-      <Featuress />
-<Cardd />
-<TabGrid />
-<Testimonial />
-<FAQ />
+{/* <Featuressss />
+<Featuresss /> */}
+      {/* <Featuress /> */}
+      
 
+
+
+
+{/* <TabGrid /> */}
+
+
+
+{/*<FAQ />/}
+{/* <div style={{display:'flex', justifyContent:'center'}}>
+
+<HeadingTitle>Nos Partenaires</HeadingTitle>
+</div> */}
+{/* <div style={{display:'flex', justifyContent:'center'}}>
+
+<img src={partenaire} />
+</div> */}
 <Footer />
 {/* <Footer /> */}
 {/* <AboutUs /> */}

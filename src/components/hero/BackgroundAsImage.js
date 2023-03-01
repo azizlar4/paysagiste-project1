@@ -14,13 +14,19 @@ const StyledHeader = styled(Header)`
   ${NavToggle}.closed {
     ${tw`text-gray-100 hover:text-primary-500`}
   }
+
+  ${({ marginTop }) =>
+    marginTop &&
+    css`
+      margin-top: ${marginTop};
+    `}
 `;
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
-  background-image: url("https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
+  background-image: url("https://images.unsplash.com/photo-1444392061186-9fc38f84f726?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
 `;
 
-const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-25`;
+const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-10 `;
 
 const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto`;
 const TwoColumn = tw.div`pt-24 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
@@ -42,7 +48,7 @@ const SlantedBackground = styled.span`
   }
 `;
 
-const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-sm`;
+const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-green-500 font-medium text-sm`;
 
 const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-500 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:shadow-outline`;
 
@@ -58,21 +64,21 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">
-        About
+      <NavLink style={{fontWeight:"bold"}} href="#">
+        Acceuil
       </NavLink>
-      <NavLink href="#">
-        Blog
+      <NavLink  style={{fontWeight:"bold"}}  href="#">
+        Nos Services
       </NavLink>
-      <NavLink href="#">
+      <NavLink  style={{fontWeight:"bold"}} href="#">
         Locations
       </NavLink>
-      <NavLink href="#">
-        Pricing
+      <NavLink   style={{fontWeight:"bold"}} href="#">
+      Blog
       </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink href="/#">
+      <PrimaryLink style={{backgroundColor:"#578E44", fontWeight:"bold"}} href="/#">
         Hire Us
       </PrimaryLink>
     </NavLinks>
@@ -82,20 +88,21 @@ export default () => {
     <Container>
       <OpacityOverlay />
       <HeroContainer>
-        <StyledHeader links={navLinks} />
-        <TwoColumn>
+        <StyledHeader marginTop="10px"  links={navLinks} />
+        <TwoColumn >
           <LeftColumn>
-            <Notification>We have now launched operations in Europe.</Notification>
+            <Notification>Paysagiste.</Notification>
             <Heading>
-              <span>Hire the best</span>
+              <span>Aménagements extérieurs</span>
               <br />
-              <SlantedBackground>Marketing Team.</SlantedBackground>
+              <SlantedBackground style={{color:"#578E44" }}>Un jardin qui vous ressemble.</SlantedBackground>
             </Heading>
-            <PrimaryAction>Read Customer Stories</PrimaryAction>
+            <PrimaryAction style={{color:"#578E44"}}>En Savoir Plus</PrimaryAction>
           </LeftColumn>
           <RightColumn>
+            
             <StyledResponsiveVideoEmbed
-              url="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"
+              url="https://player.vimeo.com/video/803408070?h=1020b2bdf8?title=0&portrait=0&byline=0&autoplay=0&responsive=1"
               background="transparent"
             />
           </RightColumn>

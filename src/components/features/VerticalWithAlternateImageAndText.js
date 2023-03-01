@@ -4,6 +4,12 @@ import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 
+import conseil from "../../img/conseil.png"
+
+
+
+
+
 const Container = tw.div`relative`;
 
 const SingleColumn = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -44,19 +50,19 @@ export default () => {
   const cards = [
     {
       imageSrc:
-        "https://www.mastersbooking.fr/sites/default/files/styles/img_blog/public/field/image/conseil-strategie-mastersbooking.jpg?itok=Ul7yXKzH",
-      subtitle: "Conseil :",
-      title: "Conseil :",
+      "https://www.paysage-sharon.lu/wp-content/uploads/2023/01/Creation-terrasse.jpg",
+      subtitle: "Création de terrasses :",
+      title: "Création de terrasses :",
       description:
-        "Nous  formulons  toujours  nos  recommandations  après  un audit et une évaluation approfondie des besoins spécifiques de chaque client.",
+        "Nous créons des terrasse en bois «sur-mesure », afin de vous faire profiter des meilleurs moments de détente en extérieur. Nous pouvons réaliser différentes terrasse avec différentes matériaux dont  la terrasse en WPC (composite bois-polymère) et bois exotique en vous conseillant sur les technique dentretien pour maintenir votre terrasse en parfait état. Nous nous chargeons de la maîtrise dœuvre, du suivi des travaux à la réception des travaux « clef en main » en vous aidant à aménager votre terrasse pour créer un espace extérieur structuré, beau et qui vous correspond.",
       url: "https://timerse.com"
     },
 
     {
       imageSrc:
-        "https://cdn.futura-sciences.com/buildsv6/images/wide1920/2/8/5/285e6423d3_50148975_logiciels.jpg",
-      subtitle: "Free",
-      title: "Création : ",
+        "https://www.paysage-sharon.lu/wp-content/uploads/2023/02/News-Petits-travaux-de-maconnerie-paysagere.jpg",
+      subtitle: "Petits travaux de maçonnerie paysagère",
+      title: "Petits travaux de maçonnerie paysagère : ",
       description:
         "Dans  la  mesure  du  budget  et  des  délais  impartis,  nous privilégions  la  création  d’objets  exclusifs  sur  mesure, meilleur  gage  d’originalité  et  de  visibilité  pour l’annonceur.",
       url: "https://timerse.com"
@@ -64,17 +70,44 @@ export default () => {
 
     {
       imageSrc:
-        "https://mycvtheque.com/wp-content/uploads/2016/06/Sourcing.png",
-      subtitle: "Exclusive",
-      title: "Sourcing :",
+        "https://www.paysage-sharon.lu/wp-content/uploads/2023/01/Brise-vue.jpg",
+      subtitle: "Brises vues, espaliers, clôtures rigides",
+      title: "Brises vues, espaliers, clôtures rigides :",
       description:
         "Nous réalisons des voyages d’exploration et assistons aux plus importants salons professionnels afin de dénicher les dernières nouveautés; Nous disposons d’autre part d’un accès internet à la plus grande base mondiale de Sourcing d’objets promotionnels existants.",
+      url: "https://timerse.com"
+    },
+    {
+      imageSrc:
+        "https://www.paysage-sharon.lu/wp-content/uploads/2023/02/Gabion-news.jpg",
+      subtitle: "Installation électrique des éclairages",
+      title: "Installation électrique des éclairages : ",
+      description:
+        "Dans  la  mesure  du  budget  et  des  délais  impartis,  nous privilégions  la  création  d’objets  exclusifs  sur  mesure, meilleur  gage  d’originalité  et  de  visibilité  pour l’annonceur.",
+      url: "https://timerse.com"
+    },
+    {
+      imageSrc:
+        "https://www.paysage-sharon.lu/wp-content/uploads/2023/02/Jeux-enfants-news.jpg",
+      subtitle: "Installation des systèmes d’arrosages",
+      title: "Installation des systèmes d’arrosages : ",
+      description:
+        "Dans  la  mesure  du  budget  et  des  délais  impartis,  nous privilégions  la  création  d’objets  exclusifs  sur  mesure, meilleur  gage  d’originalité  et  de  visibilité  pour l’annonceur.",
+      url: "https://timerse.com"
+    },
+    {
+      imageSrc:
+        "https://www.paysage-sharon.lu/wp-content/uploads/2023/01/Eclairage.jpg",
+      subtitle: "Installation de robot autonome",
+      title: "Installation de robot autonome : ",
+      description:
+        "Dans  la  mesure  du  budget  et  des  délais  impartis,  nous privilégions  la  création  d’objets  exclusifs  sur  mesure, meilleur  gage  d’originalité  et  de  visibilité  pour l’annonceur.",
       url: "https://timerse.com"
     }
   ];
 
   return (
-    <Container>
+    <Container id="About">
       <SingleColumn>
         <HeadingInfoContainer>
           <HeadingTitle>Notre passion</HeadingTitle>

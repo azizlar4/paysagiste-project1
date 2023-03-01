@@ -75,14 +75,14 @@ export default ({
     { imageSrc: SupportIconImage, title: "Communication digitale",  description: "  Gestion des réseaux sociaux - Social CRM - Croissances des réseaux" },
     { imageSrc: CustomizeIconImage, title: "Mise en place de la stratégie de communication :",description: " Développer votre notoriété. Travailler votre image de marque Faire agir votre client idéal3 Fidéliser vos clients. " },
     { imageSrc: ReliableIconImage, title: "Construction et suivi de la ligne éditoriale :",  description: "  Acquérir du trafic qualifié sur votre site web, Promouvoir un secteur d’activité en particulier, Gagner en visibilité et en notoriété, Démontrer votre savoir-faire…" },
-    // { imageSrc: FastIconImage, title: "Fast" },
-    // { imageSrc: SimpleIconImage, title: "Easy" }
+   { imageSrc: FastIconImage, title: "Fast",description: " Développer votre notoriété. Travailler votre image de marque Faire agir votre client idéal3 Fidéliser vos clients. " },
+   { imageSrc: SimpleIconImage, title: "Easy",description: " Développer votre notoriété. Travailler votre image de marque Faire agir votre client idéal3 Fidéliser vos clients. " }
   ];
 
   if (!cards) cards = defaultCards;
 
   return (
-    <Container>
+    <Container id="Personnalisation">
       <ThreeColumnContainer>
         {subheading && <Subheading>{subheading}</Subheading>}
         <Heading>{heading}</Heading>

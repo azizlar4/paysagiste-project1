@@ -62,16 +62,16 @@ export default ({
   //Change the statistics variable as you like, add or delete objects
   const defaultStatistics = [
     {
-      key: "Clients",
-      value: "228+"
+      key: "",
+      value: ""
     },
     {
-      key: "Projects",
-      value: "381+"
+      key: "",
+      value: ""
     },
     {
-      key: "Awards",
-      value: "100+"
+      key: "",
+      value: ""
     }
   ];
 

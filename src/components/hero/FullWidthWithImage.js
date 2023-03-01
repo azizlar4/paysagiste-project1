@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-
+import presentation from "../../img/presentation.jpg"
 import Header, { LogoLink, NavLinks, NavLink as NavLinkBase } from "../headers/light.js";
 
 const StyledHeader = styled(Header)`
@@ -20,7 +20,7 @@ const Container = tw.div`relative -mx-8 -mt-8`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row bg-gray-100`;
 const LeftColumn = tw.div`ml-8 mr-8 xl:pl-10 py-8`;
 const RightColumn = styled.div`
-  background-image: url("https://www.o-communication.com/wp-content/uploads/2019/10/boite-de-communication.jpg");
+  background-image: url(${presentation});
   ${tw`bg-green-500 bg-cover bg-center xl:ml-24 h-96 lg:h-auto lg:w-1/2 lg:flex-1`}
 `;
 
@@ -44,10 +44,11 @@ const Actions = styled.div`
 export default ({
   navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">About</NavLink>
-      <NavLink href="#">Blog</NavLink>
-      <NavLink href="#">Pricing</NavLink>
-      <NavLink href="#">Login</NavLink>
+      <NavLink href="#About">About</NavLink>
+      <NavLink href="#Personnalisation">Personnalisation </NavLink>
+      <NavLink href="#Communication">Communication</NavLink>
+      <NavLink href="#contact">Contact</NavLink>
+      
     </NavLinks>
   ],
   heading = (
