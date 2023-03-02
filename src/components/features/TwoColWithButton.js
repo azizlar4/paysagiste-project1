@@ -48,7 +48,7 @@ export default ({
     </>
   ),
   description = "Bienvenue sur le site de Jean Baptiste Dugois Paysagiste, basé à ‘‘ Les Arsures’’ dans le Jura. Nous sommes spécialisés dans les aménagements extérieurs, la création de jardins, les espaces vertsbet la maçonnerie paysagère depuis 2016.",
-  primaryButtonText = "Learn More",
+  primaryButtonText = "Voir pgit lus",
   primaryButtonUrl = "https://timerse.com",
   imageSrc = "https://scontent.ftun4-2.fna.fbcdn.net/v/t1.15752-9/331838438_3486034298333209_7133522395279672546_n.jpg?stp=dst-jpg_p1080x2048&_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=LLsycdLsxEwAX-aC-X8&_nc_ht=scontent.ftun4-2.fna&oh=03_AdQeN69HYDundkZTKxic6a7Nvhdfbl0JRqLc7n0NvAFFwA&oe=642738E2",
   buttonRounded = true,
