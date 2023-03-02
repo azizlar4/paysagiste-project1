@@ -41,7 +41,7 @@ export default () => {
         <WideColumn>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText style={{color:"#578E44"}}>Paysagiste</LogoText>
+            <LogoText style={{color:"#578E44"}}>Dugois Paysages</LogoText>
           </LogoContainer>
           <CompanyDescription>
             Treact is an Internet Technology company providing design resources such as website templates and themes.

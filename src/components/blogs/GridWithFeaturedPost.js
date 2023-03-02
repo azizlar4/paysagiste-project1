@@ -6,7 +6,7 @@ import { css } from "styled-components/macro";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings";
 import { SectionDescription } from "components/misc/Typography";
 import { ReactComponent as SvgDotPatternIcon } from "images/dot-pattern.svg";
-import LogoImage from "../../images/logo.png";
+import LogoImage from "../../images/logo.jpg";
 
 const HeadingContainer = tw.div`text-center `;
 const Subheading = tw(SubheadingBase)`mb-4 `;
@@ -61,20 +61,20 @@ const DecoratorBlob1 = tw(SvgDotPatternIcon)`absolute bottom-0 left-0 w-32 h-32 
 const DecoratorBlob2 = tw(SvgDotPatternIcon)`absolute top-0 right-0 w-32 h-32 mt-16 mr-6 transform translate-x-1/2 -translate-y-1/2 fill-current text-gray-500 opacity-50`
 
 export default ({
-  subheading = "for usususususuusus",
-  heading = "We love writing.",
+  subheading = "",
+  heading = "Nos Articles",
   description = "",
   posts = [
     {
       postImageSrc:
         "https://images.unsplash.com/photo-1584987274840-919ff11490ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       authorImageSrc:
-        "https://i.imgur.com/3Llg3Tx.png",
+        "https://i.imgur.com/VjbXWDo.png",
       title: "Les avantages des jardins verticaux et comment les créer chez vous",
       description:
         "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
-      authorName: "Paysagiste",
-      authorProfile: "Paysagiste",
+      authorName: "Dugois Paysages",
+      authorProfile: "Dugois Paysages",
       url: "https://reddit.com",
       featured: true
     },
@@ -82,28 +82,28 @@ export default ({
       postImageSrc:
         "https://plus.unsplash.com/premium_photo-1673141390222-2bd01b623bf3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1936&q=80",
       title: "Les plantes d'ombre pour un jardin frais et agréable en été",
-      authorName: "Paysagiste",
+      authorName: "Dugois Paysages",
       url: "https://reddit.com"
     },
     {
       postImageSrc:
         "https://images.unsplash.com/photo-1506868544459-9bb3a18fbc94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
       title: "Les principes essentiels d’un jardin bio",
-      authorName: "Paysagiste",
+      authorName: "Dugois Paysages",
       url: "https://reddit.com"
     },
     {
       postImageSrc:
         "https://e-paysages.fr/wp-content/uploads/2022/11/plan-plantations.jpg",
       title: "Logiciel jardin 3D gratuit en ligne : et si la solution était e-paysages ?",
-      authorName: "Paysagiste",
+      authorName: "Dugois Paysages",
       url: "https://timerse.com"
     },
     {
       postImageSrc:
         "https://e-paysages.fr/wp-content/uploads/2022/12/plan_1-Photo.jpg",
       title: "IDEE AMENAGEMENT JARDIN : 15 IDÉES INGÉNIEUSES, DÉCORATIVES ET FACILES À RÉALISER",
-      authorName: "Paysagiste",
+      authorName: "Dugois Paysages",
       url: "https://timerse.com"
     }
   ]

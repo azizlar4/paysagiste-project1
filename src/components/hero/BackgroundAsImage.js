@@ -23,12 +23,12 @@ const StyledHeader = styled(Header)`
 `;
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
-  background-image: url("https://images.unsplash.com/photo-1444392061186-9fc38f84f726?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
+  background-image: url("https://images.unsplash.com/photo-1472553384749-8596bacb90c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
 `;
 
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-10 `;
 
-const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto`;
+const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto `;
 const TwoColumn = tw.div`pt-24 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
 const LeftColumn = tw.div`flex flex-col items-center lg:block`;
 const RightColumn = tw.div`w-full sm:w-5/6 lg:w-1/2 mt-16 lg:mt-0 lg:pl-8`;
@@ -50,7 +50,13 @@ const SlantedBackground = styled.span`
 
 const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-green-500 font-medium text-sm`;
 
-const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-500 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:shadow-outline`;
+const PrimaryAction = tw.button`
+  px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4
+  bg-gray-100 text-green-600 font-bold rounded shadow
+  transition duration-300 hocus:bg-green-500 hocus:text-white
+  focus:outline-none focus:shadow-outline
+`;
+
 
 const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
   padding-bottom: 56.25% !important;
@@ -64,22 +70,27 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink style={{fontWeight:"bold"}} href="#">
-        Acceuil
+      <NavLink style={{fontWeight:"bold",margin:"10px"}} href="#">
+      Notre entreprise
       </NavLink>
-      <NavLink  style={{fontWeight:"bold"}}  href="#">
-        Nos Services
+      <NavLink  style={{fontWeight:"bold",margin:"10px"}}  href="#">
+      Aménagements extérieurs
       </NavLink>
-      <NavLink  style={{fontWeight:"bold"}} href="#">
-        Locations
+      <NavLink  style={{fontWeight:"bold",margin:"10px"}} href="#">
+      Entretien espaces verts
       </NavLink>
-      <NavLink   style={{fontWeight:"bold"}} href="#">
-      Blog
+      <NavLink   style={{fontWeight:"bold",margin:"10px"}} href="#">
+      Nos réalisations
+      </NavLink>
+    
+      <NavLink   style={{fontWeight:"bold",margin:"10px"}} href="#">
+      Mentions légales
+
       </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
       <PrimaryLink style={{backgroundColor:"#578E44", fontWeight:"bold"}} href="/#">
-        Hire Us
+      Contact
       </PrimaryLink>
     </NavLinks>
   ];
@@ -89,15 +100,15 @@ export default () => {
       <OpacityOverlay />
       <HeroContainer>
         <StyledHeader marginTop="10px"  links={navLinks} />
-        <TwoColumn >
+        <TwoColumn style={{paddingTop:"50px"}}>
           <LeftColumn>
-            <Notification>Paysagiste.</Notification>
+            <Notification>Dugois Paysages</Notification>
             <Heading>
               <span>Aménagements extérieurs</span>
               <br />
               <SlantedBackground style={{color:"#578E44" }}>Un jardin qui vous ressemble.</SlantedBackground>
             </Heading>
-            <PrimaryAction style={{color:"#578E44"}}>En Savoir Plus</PrimaryAction>
+            <PrimaryAction >En Savoir Plus</PrimaryAction>
           </LeftColumn>
           <RightColumn>
             

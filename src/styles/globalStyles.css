@@ -15,3 +15,8 @@
     transform: scale(0);
     /* transform: translateY(-150%); */
 }
+
+ body {
+    overflow-x: hidden;
+  
+  }
